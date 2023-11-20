@@ -1,0 +1,355 @@
+/**** HEADER ****/
+
+
+* {
+  font-family: Overpass;
+  
+  
+}
+
+header {
+  background: url('../Img/bg-pattern-intro-desktop.svg'), linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-position: center;
+  background-attachment: contain;
+  background-size: cover;
+  border-radius: 0px 0px 0px 100px;
+  color: white;
+ 
+}
+
+.container-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 0px 20px 0px;
+}
+
+
+.container-header-left {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  padding: 10px;
+}
+.elemento {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  padding: 10px;
+}
+.elemento-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  padding: 15px;
+}
+
+.container-header-right {
+  display: flex;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.button-primary {
+  background-color: white;
+  color: hsl(353, 100%, 62%);
+  border-radius: 50px;
+  border: none;
+}
+
+.button-secundary {
+  background-color: transparent;
+  color: white;
+  border-radius: 50px;
+  border: 1px solid white;
+}
+
+.title-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  ;
+}
+.elemento-title {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  padding: 10px;
+} 
+/**** MAIN ****/
+.title-menu2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: #0C0B47;
+  margin-left: 30px;
+}
+
+.container-main-one {
+  background-image: url('../Img/illustration-editor-desktop.svg');
+  background-position: right; 
+  background-attachment: scroll; 
+  background-size: auto 80%; 
+  background-repeat: no-repeat; 
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+.container-main-one img {
+  max-width: 100%;
+  height: auto;
+  display: none;
+}
+.texto-menu {
+  display: flex;
+  flex-direction: column;
+  color: #0C0B47;
+  padding-left: 60px;
+  margin-left: 30px;
+}
+
+.texto-menu > div {
+  max-width: 500px; 
+  margin-bottom: 20px; 
+}
+
+.container-main-two {
+  background: url('../Img/bg-pattern-circles.svg'), linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  background-position: left bottom; 
+  background-attachment: scroll;
+  background-size: auto 160%, cover; 
+  background-repeat: no-repeat; 
+  border-radius: 0px 100px 0px 0px;
+  color: white;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+ 
+}
+.container-main-two img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+.texto-menu-two {
+  display: flex;
+  flex-direction: column;
+  width: 40%; 
+}
+
+.texto-menu-two h1 {
+  color: white; 
+}
+
+.texto-menu-two p {
+  color: white; 
+  width: 80%; 
+}
+
+
+.container-main-three {
+  background-image: url('../Img/illustration-laptop-desktop.svg');
+  background-position: left; 
+  background-attachment: scroll; 
+  background-size: auto 80%; 
+  background-repeat: no-repeat; 
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texto-menu-three {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #0C0B47;
+  margin-right: 30px;
+  padding-right: 60px;
+  
+}
+
+.texto-menu-three > div {
+  max-width: 500px; 
+  margin-bottom: 20px; 
+}
+
+
+/**** FOOTER ****/
+
+
+footer {
+  background-color: hsl(210, 68%, 9%); /** COLOR APROXIMADO, NO ESTABA EN LA DOCUMENTACIÓN **/
+  border-radius: 0px 100px 0px 0px;
+  color: white;
+  height: 50vh;
+}
+
+.container-footer{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-items{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-evenly;
+  padding-top: 30px;
+  margin: 20px;
+}
+
+.p-footer{
+  margin-top: 40px;
+}
+
+
+/** VERSION MOBILE **/
+
+@media (max-width: 600px) {
+
+  /** HEADER **/
+  .title-menu {
+    text-align: center; 
+    padding:20px;
+  }
+
+  .elemento{
+    display: none;
+   
+  }
+  
+  
+  .button-secundary{
+    margin-left: 20px;
+  }
+
+  .buttons-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 150%;
+  }
+
+  /** MAIN **/
+
+  .container-main-one {
+    background-image: none;
+    text-align: center;
+  }
+  .container-main-one img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  } 
+  .title-menu{
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 90%;
+    text-align: center;
+  }
+
+  .title-menu h1{
+    font-size: 18px;
+
+  }
+
+  .texto-menu{
+    padding: 0;
+  }
+
+  .texto-menu h2{ 
+    font-size: 20px;
+
+  }
+
+  .texto-menu > div {
+    width: 100%;
+    margin-bottom: 20px; 
+  }
+
+
+  .container-main-one,
+  .container-main-three {
+    background-size: cover; 
+    height: auto; 
+  }
+
+  .texto-menu {
+    align-items: center; 
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px; 
+  }
+
+  .container-main-two {
+    background-size: cover; 
+    height: auto; 
+    flex-direction: column; 
+    align-items: center; 
+    border-radius: 0px 100px 0px 100px;
+
+  }
+ 
+  .texto-menu-two h1 {
+    font-size: 24px;
+    max-width: 100%;
+    height: auto;
+    
+  }
+
+  .texto-menu-two {
+    align-items: center; 
+     
+    text-align: center; 
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 90%;
+
+  }
+
+  .container-main-three {
+    background-image: none;
+  }
+
+  .texto-menu-three{
+    align-items: center;
+
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .texto-menu-three h2 {
+    font-size: 20px;
+    padding: 0;
+    
+  }
+
+  /** FOOTER **/
+
+  footer {
+    height: auto; /* Ajusta la altura automáticamente en dispositivos móviles */
+  }
+
+  .footer-items {
+    flex-direction: column; /* Cambia la dirección a columna en dispositivos móviles */
+    align-items: center; /* Centra los elementos en dispositivos móviles */
+    justify-content: center; /* Centra el contenido verticalmente en dispositivos móviles */
+  }
+}
